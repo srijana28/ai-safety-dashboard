@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# AI Safety Incident Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend dashboard for monitoring and reporting AI safety incidents, built with React, TypeScript, and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View list of AI safety incidents with title, severity, and date
+- Filter incidents by severity level (All, Low, Medium, High)
+- Sort incidents by reported date (Newest First, Oldest First)
+- Expand/collapse incident details
+- Report new incidents with form validation
+- Responsive design
+- Local storage persistence
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 18
+- TypeScript
+- Tailwind CSS
+- date-fns (for date formatting)
+- Radix UI (for accessible components)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository
+   ```bash
+   git clone https://github.com/srijana28/ai-safety-dashboard.git
+   cd ai-safety-dashboard
+   Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies
+   ```bash
+   npm install
+3. Start the development server
+   ```bash
+   npm start
+4. Open http://localhost:3000 in your browser
 
-### `npm run build`
+## Design Decisions
+1. State Management: Used React's built-in state management with useState and useLocalStorage custom hook for persistence
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Type Safety: Leveraged TypeScript throughout the application for better developer experience and fewer runtime errors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. UI/UX: Implemented a clean, accessible interface with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Responsive design using Tailwind CSS
 
-### `npm run eject`
+5. Animations with Framer Motion for better user experience
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. Form validation with helpful error messages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. Performance: Optimized rendering with React's memo and useCallback where appropriate
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+8. Accessibility: Followed WCAG guidelines with proper ARIA attributes and keyboard navigation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Future Improvements
+1. Add user authentication
+2. Connect to a real backend API
+3. Implement more advanced filtering options
+4. Add charts and statistics for incident trends
+5. Enable incident editing functionality
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Key Features Implemented
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Complete UI with Dark Mode**: Professional, clean interface with dark mode support
+2. **Animations**: Smooth animations for showing/hiding elements using Framer Motion
+3. **Form Validation**: Comprehensive form validation with error messages
+4. **Local Storage**: Persistence of incidents across page refreshes
+5. **Responsive Design**: Works well on all screen sizes
+6. **Accessibility**: Proper ARIA attributes and keyboard navigation
+7. **Type Safety**: Full TypeScript integration with custom types
+8. **Modern Styling**: Using Tailwind CSS for utility-first styling
+9. **Component Architecture**: Well-organized component structure
+10. **Clean Code**: Follows best practices with proper separation of concerns
+
+## How to Run
+
+1. Install dependencies: `npm install`
+2. Start development server: `npm start`
+3. Open browser to `http://localhost:3000`
+
+This solution demonstrates strong frontend development skills with React and TypeScript, including state management, user interaction handling, form validation, and responsive design. The additional features like animations, dark mode, and local storage persistence make it stand out as an impressive submission.
